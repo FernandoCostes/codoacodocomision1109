@@ -30,5 +30,5 @@ let saludar = saludo + nombre;
 let elemento = document.getElementById("principal");
 // console.log(elemento)
 elemento.innerHTML = "<h1 class='text-center bg-info'>"+ saludar + "</h1>";
-
+document.write("<h1 class='text-center bg-info'>"+ "Hola" + "</h1>")
 
