@@ -1,4 +1,4 @@
-alert("Hola Mundo!")/*Ventana emergente*/
+//alert("Hola Mundo!")/*Ventana emergente*/
 console.log("Estamos en la consola")
 
 let nombre = "Fer Costes";/*conviene usar let en lugar de var*/
@@ -29,6 +29,46 @@ let saludar = saludo + nombre;
 
 let elemento = document.getElementById("principal");
 // console.log(elemento)
-elemento.innerHTML = "<h1 class='text-center bg-info'>"+ saludar + "</h1>";
-document.write("<h1 class='text-center bg-info'>"+ "Hola" + "</h1>")
+elemento.innerHTML = "<h1 class='text-center bg-info'>" + saludar + "</h1>";
+document.write("<div class='container'><div class='row' id='principal'><h1 class='text-center bg-info'>"+ saludar +" </h1></div></div>");
 
+document.write(`
+<div class="container"><div class="row" id="principal">
+<h1 class="text-center bg-info"> ${saludar}</h1></div></div>
+`);
+
+
+//let mensaje = prompt("Menu \n 1. Papas fritas \n 2. Milanesa con fritas \n 3. Milanesa Napolitana ");
+/*
+if(mensaje === "1"){
+    elemento.innerHTML="<p>Disfurta de tus Papas!</p>";
+}else if(mensaje === "2"){
+    elemento.innerHTML="<p>Disfruta de tu Milanesa con fritas!</p>";
+}else if(mensaje === "3"){
+    elemento.innerHTML="<p>Disfruta de tu Milanesa Napolitana</p>";
+}else{
+    elemento.innerHTML="No es una opcion el valor ingresado";
+}
+
+switch (mensaje) {
+    case "1":
+        elemento.innerHTML = "<p>Disfurta de tus Papas!</p>";
+        break;
+    case "2":
+        elemento.innerHTML = "<p>Disfruta de tu Milanesa con fritas!</p>";
+        break;
+    case "3":
+        elemento.innerHTML = "<p>Disfruta de tu Milanesa Napolitana!</p>";
+        break;
+    default:
+        elemento.innerHTML = "No es una opcion el valor ingresado";
+        let mensaje = prompt("Menu \n 1. Papas fritas \n 2. Milanesa con fritas \n 3. Milanesa Napolitana ");
+}
+
+let num = parseInt(prompt("Ingresa el primer numero"));
+let num2 = parseInt(prompt("Ingresa el segundo numero"));
+
+let resultado = "<p>El resultado de: " + num + " y " + num2 + " es: " + (num+num2) + "</p>";
+elemento.innerHTML=resultado;
+elemento.innerHTML+="Hola";
+*/
